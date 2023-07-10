@@ -16,3 +16,4 @@ class PDP():
 
     def plot_pdp(selp):
         #plota, usando bibli existentes, o grafico de pdp (ainda nao interativo)
+        pass
