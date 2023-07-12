@@ -1,27 +1,28 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import sklearn
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.inspection import PartialDependenceDisplay
+from sklearn.inspection import  partial_dependence
+
+from preprocessing import preprocessing
 
 class PDP():
 
-    def __init__(self):
+    def __init__(self, data, clf):
+        self.data = data
+        self.clf  = clf
+        
+    def calcule_pdp(self,features):
+        self.pdp = partial_dependence(self.clf, self.data, features=features,
+                   kind = 'average')['average']
+        return self.pdp
+
+    def plot_pdp(self, features):
+        PartialDependenceDisplay.from_estimator(self.clf, self.data, features)
+        plt.show()
+
+    def plot_iterativo():
         pass
-
-    def load_dataset(self, path):
-        pass
-
-    def pre_processing(self):
-        #faz todo processamento e tratamento dos dados
-        pass
-
-    def calcule_pdp(self):
-        #faz o calculo e retorna os valores calculados do pdp
-        pass
-
-
-    def plot_pdp(selp):
-        #plota, usando bibli existentes, o grafico de pdp (ainda nao interativo)
-        pass
-
     
