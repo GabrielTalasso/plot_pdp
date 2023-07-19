@@ -1,0 +1,438 @@
+{
+  "src/ts/components/HistogramplotComponent.tsx": {
+    "displayName": "HistogramplotComponent",
+    "description": "",
+    "props": {
+      "value": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "xStart": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "toString": {
+              "description": "Returns a string representation of an object.\n@,param,radix, ,Specifies a radix for converting numeric values to strings. This value is only used for numbers.",
+              "required": false,
+              "name": "func",
+              "raw": "(radix?: number) => string"
+            },
+            "toFixed": {
+              "description": "Returns a string representing a number in fixed-point notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toExponential": {
+              "description": "Returns a string containing a number represented in exponential notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toPrecision": {
+              "description": "Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.\n@,param,precision, ,Number of significant digits. Must be in the range 1 - 21, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(precision?: number) => string"
+            },
+            "valueOf": {
+              "description": "Returns the primitive value of the specified object.",
+              "required": false,
+              "name": "func",
+              "raw": "() => number"
+            },
+            "toLocaleString": {
+              "description": "Converts a number to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+              "required": false,
+              "name": "shape",
+              "value": {},
+              "raw": "{ (locales?: string | string[], options?: NumberFormatOptions): string; (locales?: LocalesArgument, options?: NumberFormatOptions): string; }"
+            }
+          },
+          "raw": "Number"
+        }
+      },
+      "xEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "toString": {
+              "description": "Returns a string representation of an object.\n@,param,radix, ,Specifies a radix for converting numeric values to strings. This value is only used for numbers.",
+              "required": false,
+              "name": "func",
+              "raw": "(radix?: number) => string"
+            },
+            "toFixed": {
+              "description": "Returns a string representing a number in fixed-point notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toExponential": {
+              "description": "Returns a string containing a number represented in exponential notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toPrecision": {
+              "description": "Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.\n@,param,precision, ,Number of significant digits. Must be in the range 1 - 21, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(precision?: number) => string"
+            },
+            "valueOf": {
+              "description": "Returns the primitive value of the specified object.",
+              "required": false,
+              "name": "func",
+              "raw": "() => number"
+            },
+            "toLocaleString": {
+              "description": "Converts a number to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+              "required": false,
+              "name": "shape",
+              "value": {},
+              "raw": "{ (locales?: string | string[], options?: NumberFormatOptions): string; (locales?: LocalesArgument, options?: NumberFormatOptions): string; }"
+            }
+          },
+          "raw": "Number"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "data": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "setProps": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/ts/components/LinearHistComponent.tsx": {
+    "displayName": "LinearHistComponent",
+    "description": "",
+    "props": {
+      "histData": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "x_axis": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "y_axis": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "histValue": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "value": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "data": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "setProps": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/ts/components/LinearplotComponent.tsx": {
+    "displayName": "LinearplotComponent",
+    "description": "",
+    "props": {
+      "x_axis": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "y_axis": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "xStart": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "toString": {
+              "description": "Returns a string representation of an object.\n@,param,radix, ,Specifies a radix for converting numeric values to strings. This value is only used for numbers.",
+              "required": false,
+              "name": "func",
+              "raw": "(radix?: number) => string"
+            },
+            "toFixed": {
+              "description": "Returns a string representing a number in fixed-point notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toExponential": {
+              "description": "Returns a string containing a number represented in exponential notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toPrecision": {
+              "description": "Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.\n@,param,precision, ,Number of significant digits. Must be in the range 1 - 21, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(precision?: number) => string"
+            },
+            "valueOf": {
+              "description": "Returns the primitive value of the specified object.",
+              "required": false,
+              "name": "func",
+              "raw": "() => number"
+            },
+            "toLocaleString": {
+              "description": "Converts a number to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+              "required": false,
+              "name": "shape",
+              "value": {},
+              "raw": "{ (locales?: string | string[], options?: NumberFormatOptions): string; (locales?: LocalesArgument, options?: NumberFormatOptions): string; }"
+            }
+          },
+          "raw": "Number"
+        }
+      },
+      "xEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "toString": {
+              "description": "Returns a string representation of an object.\n@,param,radix, ,Specifies a radix for converting numeric values to strings. This value is only used for numbers.",
+              "required": false,
+              "name": "func",
+              "raw": "(radix?: number) => string"
+            },
+            "toFixed": {
+              "description": "Returns a string representing a number in fixed-point notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toExponential": {
+              "description": "Returns a string containing a number represented in exponential notation.\n@,param,fractionDigits, ,Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(fractionDigits?: number) => string"
+            },
+            "toPrecision": {
+              "description": "Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.\n@,param,precision, ,Number of significant digits. Must be in the range 1 - 21, inclusive.",
+              "required": true,
+              "name": "func",
+              "raw": "(precision?: number) => string"
+            },
+            "valueOf": {
+              "description": "Returns the primitive value of the specified object.",
+              "required": false,
+              "name": "func",
+              "raw": "() => number"
+            },
+            "toLocaleString": {
+              "description": "Converts a number to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+              "required": false,
+              "name": "shape",
+              "value": {},
+              "raw": "{ (locales?: string | string[], options?: NumberFormatOptions): string; (locales?: LocalesArgument, options?: NumberFormatOptions): string; }"
+            }
+          },
+          "raw": "Number"
+        }
+      },
+      "value": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "data": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "setProps": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/ts/components/ScatterplotComponent.tsx": {
+    "displayName": "ScatterplotComponent",
+    "description": "",
+    "props": {
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "data": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "setProps": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  }
+}
