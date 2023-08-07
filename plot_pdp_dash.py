@@ -4,7 +4,7 @@ import pandas as pd
 from jupyter_dash import JupyterDash
 
 def plot_pdp_dash(data, pdp_results, feature):
-    pdp_df = pd.DataFrame({'grid_values': pdp_results['values'][0], 'average': pdp_results['average'][0]})
+    pdp_df = pd.DataFrame({'x': pdp_results['values'][0], 'y': pdp_results['average'][0]})
     pdp_dict = pdp_df.to_dict(orient='records')
 
     app = JupyterDash(__name__)
@@ -14,8 +14,8 @@ def plot_pdp_dash(data, pdp_results, feature):
             id='linear-hist',
             data=pdp_dict,
             histData=data.to_dict(orient='records'),
-            x_axis='grid_values',
-            y_axis='average',
+            x_axis='x',
+            y_axis='y',
             histValue=feature
         ),
     ])
