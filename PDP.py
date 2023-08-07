@@ -8,6 +8,7 @@ from sklearn.inspection import  partial_dependence
 
 from preprocessing import preprocessing
 from plot_pdp_dash import plot_pdp_dash
+from comparative_pdp_plot import plot_comparative_pdp_dash
 
 class PDP():
 
@@ -25,6 +26,9 @@ class PDP():
         PartialDependenceDisplay.from_estimator(self.clf, self.data, features = features)
         plt.show()
 
-    def plot_pdp_iterativo(self, pdp_results, feature):
+    def plot_pdp_interativo(self, pdp_results, feature):
         plot_pdp_dash(self.data, pdp_results, feature)
+
+    def plot_comparative_pdp(self, pdp_results, feature, models_name):
+        plot_comparative_pdp_dash(self.data, pdp_results, feature, models_name)
     
